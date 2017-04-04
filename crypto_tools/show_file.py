@@ -26,8 +26,7 @@ def show_crypto_file(fileobj):
     else:
         print('Not sure what kind of input that is.', file=sys.stderr)
         print(
-            'Note that I\'ve not been trained to recognize CSRs yet,'
-            ' though.',
+            'Note that I\'ve not been trained to recognize CSRs yet, though.',
             file=sys.stderr,
         )
         print(
