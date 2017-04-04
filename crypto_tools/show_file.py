@@ -20,10 +20,13 @@ def show_crypto_file(fileobj):
     elif first_line == '-----BEGIN RSA PRIVATE KEY-----\n':
         # RSA private key:
         openssl_call(('rsa', '-text', '-noout'), data)
+    elif first_line == '-----BEGIN PRIVATE KEY-----\n':
+        # OpenSSL RSA private key:
+        openssl_call(('rsa', '-text', '-noout'), data)
     else:
         print('Not sure what kind of input that is.', file=sys.stderr)
         print(
-            'Note though that I\'ve not been trained to recognize CSRs yet,'
+            'Note that I\'ve not been trained to recognize CSRs yet,'
             ' though.',
             file=sys.stderr,
         )
