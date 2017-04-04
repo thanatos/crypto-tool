@@ -1,9 +1,9 @@
-===============
-``crypto-tool``
-===============
+================
+``crypto-tools``
+================
 
-``crypto-tool`` is a tool to make some common cryptographic operations less
-painful. Currently, it supports:
+``crypto-tools`` is a python library containing tools to make some common
+cryptographic operations less painful. Currently, it supports:
 
 * ``generate_private_key``: Generating private RSA keys.
 * ``show_file``: Displaying a textual version of some common cryptographic
